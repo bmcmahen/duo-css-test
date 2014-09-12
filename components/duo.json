@@ -1,0 +1,29 @@
+{
+  "index.css": {
+    "id": "index.css",
+    "type": "css",
+    "mtime": 1410494932000,
+    "src": "@import './one.css';\n@import './two.css';\n",
+    "deps": {
+      "./one.css": "one.css",
+      "./two.css": "two.css"
+    },
+    "entry": true
+  },
+  "two.css": {
+    "id": "two.css",
+    "type": "css",
+    "mtime": 1410494916000,
+    "src": "div {\n  content: 'two';\n}\n",
+    "deps": {}
+  },
+  "one.css": {
+    "id": "one.css",
+    "type": "css",
+    "mtime": 1410494921000,
+    "src": "@import './two.css';\n\ndiv {\n  content: 'one';\n}\n",
+    "deps": {
+      "./two.css": "two.css"
+    }
+  }
+}
